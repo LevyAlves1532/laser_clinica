@@ -5,6 +5,26 @@
 	const menu = document.querySelector('[data-menu]');
 	const menuToggle = document.querySelector('[data-menu-toggle]');
 	const faqItems = document.querySelectorAll('[data-faq-item]');
+	const cookieNotice = document.querySelector('[data-cookie-notice]');
+	const cookieClose = document.querySelector('[data-cookie-close]');
+	const whatsappMessage = document.querySelector('[data-whatsapp-message]');
+
+	if (cookieNotice && cookieClose) {
+		cookieClose.addEventListener('click', () => {
+			cookieNotice.classList.add('is-hidden');
+			window.localStorage.setItem('laserclinica-cookie-notice', 'closed');
+		});
+
+		if (window.localStorage.getItem('laserclinica-cookie-notice') === 'closed') {
+			cookieNotice.classList.add('is-hidden');
+		}
+	}
+
+	if (whatsappMessage) {
+		window.setTimeout(() => {
+			whatsappMessage.classList.add('is-hidden');
+		}, 5000);
+	}
 
 	if (!header || !menu || !menuToggle) {
 		return;

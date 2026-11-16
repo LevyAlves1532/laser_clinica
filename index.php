@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=ac_unit,alarm,cancel,chat,check,clinical_notes,electric_bolt,expand_more,health_and_safety,hourglass_top,info,light_mode,map,menu,phone,photo_camera,public,sanitizer,schedule,savings,smart_display,spa,task_alt,trending_down,tungsten,tune,verified,location_on" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <link rel="stylesheet" href="./assets/css/app.css">
     </head>
@@ -29,6 +29,7 @@
         <?php require('./containers/faq.php'); ?>
         <?php require('./containers/cta.php'); ?>
         <?php require('./containers/footer.php'); ?>
+        <?php require('./containers/floating-tools.php'); ?>
 
         <script src="./assets/js/app.js"></script>
     </body>
