@@ -727,6 +727,200 @@ p {
 	}
 }
 
+/* Rigor técnico e biossegurança */
+.safety {
+	padding: clamp(4.5rem, 9vw, 6.5rem) 1.5rem;
+	background: #eef3ff;
+}
+
+.safety__container {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(360px, 0.98fr);
+	align-items: center;
+	gap: clamp(2rem, 6vw, 4.5rem);
+	width: min(100%, 1200px);
+	margin: 0 auto;
+}
+
+.safety__heading {
+	margin-bottom: 1.6rem;
+}
+
+.safety__heading h2 {
+	max-width: 520px;
+	margin-bottom: 1rem;
+	color: #071b35;
+	font-size: clamp(1.9rem, 4vw, 2.85rem);
+	font-weight: 800;
+	letter-spacing: -0.06em;
+	line-height: 1.12;
+}
+
+.safety__heading p {
+	max-width: 520px;
+	margin-bottom: 0;
+	color: #405372;
+	font-size: 0.92rem;
+	line-height: 1.55;
+}
+
+.technology-list {
+	display: grid;
+	gap: 0.75rem;
+}
+
+.technology-card {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.8rem;
+	padding: 0.85rem 0.9rem;
+	border: 1px solid rgb(214 224 240 / 0.75);
+	border-radius: 0.7rem;
+	background: white;
+	box-shadow: 0 2px 4px rgb(40 65 100 / 0.04);
+}
+
+.technology-card__icon {
+	display: grid;
+	flex: 0 0 2rem;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.45rem;
+	background: #e1ecff;
+	color: var(--color-primary-dark);
+}
+
+.technology-card__icon .material-symbols-outlined {
+	font-size: 1.1rem;
+}
+
+.technology-card h3 {
+	margin-bottom: 0.15rem;
+	color: #071b35;
+	font-size: 0.8rem;
+	font-weight: 800;
+	line-height: 1.35;
+}
+
+.technology-card p {
+	margin: 0;
+	color: #405372;
+	font-size: 0.68rem;
+	line-height: 1.4;
+}
+
+.safety__panel {
+	padding: 1.8rem;
+	border-radius: 1.1rem;
+	background: white;
+	box-shadow: 0 8px 20px rgb(40 65 100 / 0.06);
+}
+
+.safety__panel h3 {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	margin-bottom: 1.15rem;
+	color: #071b35;
+	font-size: 1rem;
+	font-weight: 800;
+}
+
+.safety__panel h3 .material-symbols-outlined {
+	color: var(--color-tertiary-dark);
+	font-size: 1.3rem;
+}
+
+.safety__panel > p {
+	margin-bottom: 1.25rem;
+	color: #405372;
+	font-size: 0.75rem;
+	line-height: 1.55;
+}
+
+.safety__panel > p strong {
+	color: #071b35;
+}
+
+.contraindications-list {
+	display: grid;
+	gap: 0.75rem;
+	padding: 0;
+	margin: 0 0 1.4rem;
+	list-style: none;
+}
+
+.contraindication-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.55rem;
+	color: #405372;
+	font-size: 0.68rem;
+	line-height: 1.35;
+}
+
+.contraindication-item > .material-symbols-outlined {
+	flex: 0 0 auto;
+	margin-top: 0.05rem;
+	color: #e11d48;
+	font-size: 0.95rem;
+}
+
+.safety__contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.75rem;
+	border-radius: 0.6rem;
+	background: #e1ecff;
+	color: #315071;
+	font-size: 0.68rem;
+}
+
+.safety__contact a {
+	font-weight: 800;
+	white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+	.safety__container {
+		grid-template-columns: 1fr;
+		max-width: 720px;
+	}
+
+	.safety__heading {
+		text-align: center;
+	}
+
+	.safety__heading h2,
+	.safety__heading p {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.safety {
+		padding-inline: 1rem;
+	}
+
+	.safety__panel {
+		padding: 1.25rem;
+	}
+
+	.safety__contact {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.safety__contact a {
+		white-space: normal;
+	}
+}
+
 /* Evolução clínica */
 .evolution {
 	padding: clamp(4.5rem, 9vw, 6.5rem) 1.5rem;

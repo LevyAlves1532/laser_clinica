@@ -9,6 +9,8 @@ $components = [
     'cRegionCard' => 'region-card.php',
     'cComboOffer' => 'combo-offer.php',
     'cEvolutionCard' => 'evolution-card.php',
+    'cTechnologyCard' => 'technology-card.php',
+    'cContraindication' => 'contraindication-item.php',
     'cButton' => 'button.php',
 ];
 
