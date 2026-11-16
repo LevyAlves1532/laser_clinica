@@ -13,6 +13,7 @@ $components = [
     'cContraindication' => 'contraindication-item.php',
     'cTestimonialCard' => 'testimonial-card.php',
     'cFaqItem' => 'faq-item.php',
+    'cTrustItem' => 'trust-item.php',
     'cButton' => 'button.php',
 ];
 
