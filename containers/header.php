@@ -1,4 +1,4 @@
-<header class="site-header" data-header>
+<header class="site-header" data-header itemscope itemtype="https://schema.org/WPHeader">
 	<div class="site-header__container">
 		<a class="brand" href="./" aria-label="LaserClínica - início">
 			<span class="brand__mark" aria-hidden="true">✦</span>
@@ -13,7 +13,7 @@
 			<span class="sr-only">Abrir menu</span>
 		</button>
 
-		<nav class="site-header__nav" id="main-navigation" aria-label="Navegação principal" data-menu>
+		<nav class="site-header__nav" id="main-navigation" aria-label="Navegação principal" data-menu itemscope itemtype="https://schema.org/SiteNavigationElement">
 			<a href="#beneficios">Benefícios</a>
 			<a href="#como-funciona">Como Funciona</a>
 			<a href="#regioes">Regiões</a>

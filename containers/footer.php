@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
     <div class="site-footer__main">
         <div class="site-footer__container">
             <section class="site-footer__brand-column" aria-labelledby="footer-brand-title">
