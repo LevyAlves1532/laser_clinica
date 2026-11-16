@@ -5,6 +5,7 @@ $folderComponents = './components/';
 $components = [
     'cCardBanner' => 'card-banner.php',
     'cDifferentialCard' => 'differential-card.php',
+    'cTreatmentStep' => 'treatment-step.php',
     'cButton' => 'button.php',
 ];
 
