@@ -1,0 +1,135 @@
+:root {
+	/* Cores principais da identidade visual */
+	--color-primary: #0284c7;
+	--color-primary-dark: #0369a1;
+	--color-primary-light: #38bdf8;
+
+	--color-secondary: #25d366;
+	--color-secondary-dark: #16a34a;
+	--color-secondary-light: #86efac;
+
+	--color-tertiary: #f97316;
+	--color-tertiary-dark: #ea580c;
+	--color-tertiary-light: #fdba74;
+
+	--color-neutral: #475569;
+	--color-neutral-dark: #1e293b;
+	--color-neutral-light: #f1f5f9;
+
+	--color-white: #ffffff;
+	--color-black: #020617;
+	--color-border: #cbd5e1;
+
+	--font-family-base: "Plus Jakarta Sans", sans-serif;
+	--font-size-base: 1rem;
+	--line-height-base: 1.5;
+
+	--radius-sm: 0.375rem;
+	--radius-md: 0.75rem;
+	--radius-lg: 1rem;
+
+	--shadow-sm: 0 1px 2px rgb(15 23 42 / 0.08);
+	--shadow-md: 0 8px 24px rgb(15 23 42 / 0.12);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+	background-color: var(--color-neutral-light);
+	color: var(--color-neutral-dark);
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-base);
+	line-height: var(--line-height-base);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+button,
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+a {
+	color: var(--color-primary-dark);
+	text-decoration: none;
+	transition: color 160ms ease;
+}
+
+a:hover {
+	color: var(--color-primary);
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin-top: 0;
+}
+
+/* Classes utilitárias para reutilizar a paleta da aplicação */
+.text-primary {
+	color: var(--color-primary);
+}
+
+.text-secondary {
+	color: var(--color-secondary-dark);
+}
+
+.text-tertiary {
+	color: var(--color-tertiary-dark);
+}
+
+.text-neutral {
+	color: var(--color-neutral);
+}
+
+.bg-primary {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+}
+
+.bg-secondary {
+	background-color: var(--color-secondary);
+	color: var(--color-black);
+}
+
+.bg-tertiary {
+	background-color: var(--color-tertiary);
+	color: var(--color-black);
+}
+
+.bg-neutral {
+	background-color: var(--color-neutral);
+	color: var(--color-white);
+}
