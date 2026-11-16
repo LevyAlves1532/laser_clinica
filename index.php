@@ -23,6 +23,7 @@
         <?php require('./containers/differentials.php'); ?>
         <?php require('./containers/treatment.php'); ?>
         <?php require('./containers/regions.php'); ?>
+        <?php require('./containers/evolution.php'); ?>
 
         <script src="./assets/js/app.js"></script>
     </body>
