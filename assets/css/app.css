@@ -726,3 +726,135 @@ p {
 		min-height: 390px;
 	}
 }
+
+/* Diferenciais clínicos */
+.differentials {
+	padding: clamp(4.5rem, 9vw, 7rem) 1.5rem;
+	background: #eef3ff;
+}
+
+.differentials__container {
+	width: min(100%, 1200px);
+	margin: 0 auto;
+}
+
+.differentials__heading {
+	margin: 0 auto clamp(2.5rem, 5vw, 3.75rem);
+	text-align: center;
+}
+
+.section-label {
+	display: inline-block;
+	margin-bottom: 0.9rem;
+	padding: 0.3rem 0.7rem;
+	border-radius: 999px;
+	background: #dceaff;
+	color: var(--color-primary-dark);
+	font-size: 0.62rem;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.differentials__heading h2 {
+	margin-bottom: 0.55rem;
+	color: #071b35;
+	font-size: clamp(1.8rem, 3.5vw, 2.85rem);
+	font-weight: 800;
+	letter-spacing: -0.06em;
+	line-height: 1.15;
+}
+
+.differentials__heading p {
+	margin-bottom: 0;
+	color: #405372;
+	font-size: clamp(0.88rem, 1.5vw, 1rem);
+	line-height: 1.5;
+}
+
+.differentials__grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.15rem;
+}
+
+.differential-card {
+	min-height: 218px;
+	padding: 1.55rem;
+	border: 1px solid rgb(214 224 240 / 0.75);
+	border-radius: 0.8rem;
+	background: var(--color-white);
+	box-shadow: 0 2px 4px rgb(40 65 100 / 0.04);
+	transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.differential-card:hover {
+	box-shadow: 0 12px 24px rgb(40 65 100 / 0.11);
+	transform: translateY(-4px);
+}
+
+.differential-card__icon {
+	display: grid;
+	place-items: center;
+	width: 2.7rem;
+	height: 2.7rem;
+	margin-bottom: 1rem;
+	border-radius: 0.6rem;
+	background: #e4eeff;
+	color: var(--color-primary-dark);
+}
+
+.differential-card__icon .material-symbols-outlined {
+	font-size: 1.45rem;
+}
+
+.differential-card--green .differential-card__icon {
+	background: #4df67d;
+	color: #08753d;
+}
+
+.differential-card--orange .differential-card__icon {
+	background: #ffdbc9;
+	color: #bc500e;
+}
+
+.differential-card h3 {
+	margin-bottom: 0.75rem;
+	color: #071b35;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: -0.025em;
+	line-height: 1.35;
+}
+
+.differential-card p {
+	margin-bottom: 0;
+	color: #405372;
+	font-size: 0.78rem;
+	line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+	.differentials__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 600px) {
+	.differentials {
+		padding-inline: 1rem;
+	}
+
+	.differentials__break {
+		display: none;
+	}
+
+	.differentials__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.differential-card {
+		min-height: auto;
+		padding: 1.35rem;
+	}
+}

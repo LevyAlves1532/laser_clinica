@@ -13,13 +13,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=ac_unit,chat,electric_bolt,menu,spa" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=ac_unit,chat,electric_bolt,hourglass_top,light_mode,menu,savings,spa,trending_down,verified" />
 
         <link rel="stylesheet" href="./assets/css/app.css">
     </head>
     <body>
         <?php require('./containers/header.php'); ?>
         <?php require('./containers/banner.php'); ?>
+        <?php require('./containers/differentials.php'); ?>
 
         <script src="./assets/js/app.js"></script>
     </body>
