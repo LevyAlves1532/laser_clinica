@@ -25,6 +25,7 @@
         <?php require('./containers/regions.php'); ?>
         <?php require('./containers/evolution.php'); ?>
         <?php require('./containers/safety.php'); ?>
+        <?php require('./containers/testimonials.php'); ?>
 
         <script src="./assets/js/app.js"></script>
     </body>

@@ -727,6 +727,165 @@ p {
 	}
 }
 
+/* Depoimentos de clientes */
+.testimonials {
+	padding: clamp(4.5rem, 9vw, 6.5rem) 1.5rem;
+	background: #f8f9ff;
+}
+
+.testimonials__container {
+	width: min(100%, 1200px);
+	margin: 0 auto;
+}
+
+.testimonials__heading {
+	margin: 0 auto clamp(2.5rem, 5vw, 3.7rem);
+	text-align: center;
+}
+
+.testimonials__eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin-bottom: 0.9rem;
+	padding: 0.3rem 0.7rem;
+	border-radius: 999px;
+	background: #4df67d;
+	color: #08753d;
+	font-size: 0.62rem;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.testimonials__eyebrow > span {
+	font-size: 0.8rem;
+}
+
+.testimonials__heading h2 {
+	margin-bottom: 0.55rem;
+	color: #071b35;
+	font-size: clamp(1.8rem, 3.5vw, 2.85rem);
+	font-weight: 800;
+	letter-spacing: -0.06em;
+	line-height: 1.15;
+}
+
+.testimonials__heading p {
+	margin-bottom: 0;
+	color: #405372;
+	font-size: clamp(0.88rem, 1.5vw, 1rem);
+	line-height: 1.5;
+}
+
+.testimonials__grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1.15rem;
+}
+
+.testimonial-card {
+	display: flex;
+	min-height: 275px;
+	flex-direction: column;
+	padding: 1.15rem;
+	border: 1px solid rgb(214 224 240 / 0.75);
+	border-radius: 0.8rem;
+	background: var(--color-white);
+	box-shadow: 0 2px 4px rgb(40 65 100 / 0.04);
+	transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.testimonial-card:hover {
+	box-shadow: 0 12px 24px rgb(40 65 100 / 0.11);
+	transform: translateY(-4px);
+}
+
+.testimonial-card__rating {
+	margin-bottom: 0.7rem;
+	color: #f59e0b;
+	font-size: 0.9rem;
+	letter-spacing: 0.08em;
+}
+
+.testimonial-card blockquote {
+	flex: 1;
+	margin: 0 0 1rem;
+	color: #071b35;
+	font-size: 0.78rem;
+	line-height: 1.55;
+}
+
+.testimonial-card__author {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid #e2e9f4;
+}
+
+.testimonial-card__avatar {
+	display: grid;
+	flex: 0 0 2rem;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	overflow: hidden;
+	border-radius: 50%;
+	background: #e1ecff;
+	color: var(--color-primary-dark);
+	font-size: 0.7rem;
+	font-weight: 800;
+}
+
+.testimonial-card__avatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.testimonial-card__author strong,
+.testimonial-card__author span {
+	display: block;
+}
+
+.testimonial-card__author strong {
+	color: #071b35;
+	font-size: 0.68rem;
+	line-height: 1.25;
+}
+
+.testimonial-card__author span {
+	margin-top: 0.1rem;
+	color: #405372;
+	font-size: 0.55rem;
+	line-height: 1.25;
+}
+
+@media (max-width: 1000px) {
+	.testimonials__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 600px) {
+	.testimonials {
+		padding-inline: 1rem;
+	}
+
+	.testimonials__break {
+		display: none;
+	}
+
+	.testimonials__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.testimonial-card {
+		min-height: auto;
+	}
+}
+
 /* Rigor técnico e biossegurança */
 .safety {
 	padding: clamp(4.5rem, 9vw, 6.5rem) 1.5rem;

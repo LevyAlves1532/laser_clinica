@@ -11,6 +11,7 @@ $components = [
     'cEvolutionCard' => 'evolution-card.php',
     'cTechnologyCard' => 'technology-card.php',
     'cContraindication' => 'contraindication-item.php',
+    'cTestimonialCard' => 'testimonial-card.php',
     'cButton' => 'button.php',
 ];
 
