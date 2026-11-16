@@ -22,6 +22,7 @@
         <?php require('./containers/banner.php'); ?>
         <?php require('./containers/differentials.php'); ?>
         <?php require('./containers/treatment.php'); ?>
+        <?php require('./containers/regions.php'); ?>
 
         <script src="./assets/js/app.js"></script>
     </body>

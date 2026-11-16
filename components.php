@@ -6,6 +6,8 @@ $components = [
     'cCardBanner' => 'card-banner.php',
     'cDifferentialCard' => 'differential-card.php',
     'cTreatmentStep' => 'treatment-step.php',
+    'cRegionCard' => 'region-card.php',
+    'cComboOffer' => 'combo-offer.php',
     'cButton' => 'button.php',
 ];
 
